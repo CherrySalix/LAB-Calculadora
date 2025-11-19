@@ -11,8 +11,8 @@ function multiply(a, b) {
 }
 
 function divide(a, b) {
-  if (b === 0) {
-    return "Error: división entre 0";
+  if (b == 0) {
+    return "Error: Dividiste por cero!";
   }
   return a / b;
 }
@@ -39,5 +39,5 @@ function calcular() {
     else if (operacion === "dividir") {
         resultado = divide(num1, num2);
     }
-    document.getElementById("resultado").innerText = "Resultado: " + resultado;
+    document.getElementById("resultado").innerText = resultado;
 }

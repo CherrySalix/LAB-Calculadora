@@ -7,23 +7,30 @@
     <body>
         <div align="center" style="margin-top:50px;">
             <h1>Mini calculadora!</h1>
-            <label>Primer numero: </label>
-            <input type="number" id="num1" style="padding:5px; margin-bottom:10px;"/>
+            <img src="https://static.wikia.nocookie.net/needy-streamer-overload/images/8/82/KAngel-pose3.gif/revision/latest/scale-to-width-down/1000?cb=20230913111207" alt="Generation Logo" width="600px" style="margin-bottom:10px;"/>
+            <div style="padding:20px; margin-left:20px;">
+                <label>Primer numero: </label>
+                <input type="number" id="num1" style="padding:5px; margin-bottom:10px;"/>
 
-            <label>Segundo numero: </label>
-            <input type="number" id="num2" style="padding:5px; margin-bottom:10px;"/>
-
-            <label>Operacion: </label>
-            <select id="operacion" style="padding:5px; margin-bottom:10px;">
+                <label>Segundo numero: </label>
+                <input type="number" id="num2" style="padding:5px; margin-bottom:10px;"/>
+            </div>
+            <div>
+                <label>Operacion: </label>
+                <select id="operacion" style="padding:5px; margin-bottom:10px;">
                 <option value="sumar">Suma</option>
                 <option value="restar">Resta</option>
                 <option value="multiplicar">Multiplicacion</option>
                 <option value="dividir">Division</option>
             </select>
-
-            <button onclick="calcular()" style="padding:5px 10px; margin-bottom:10px;">Calcular</button>
-            <h2 id="resultado">Resultado: </h2>
-            <div id="resultado">—</div>
+            </div>
+            <div>
+                <button onclick="calcular()" style="padding:5px 10px; margin-bottom:10px;">Calcular</button>
+            </div>
+            <div style="padding:10px 20px;">
+                <h3>Resultado:</h3>
+                <p id="resultado">—</p>
+            </div> 
         </div>
         <script src="script.js"></script>
     </body>
