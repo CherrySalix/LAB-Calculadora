@@ -3,17 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <title>Calculadora Generation</title>
+        <style>
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+        }
+        </style>
+
     </head>
-    <body>
-        <div align="center" style="margin-top:50px;">
-            <h1>Mini calculadora!</h1>
-            <img src="https://static.wikia.nocookie.net/needy-streamer-overload/images/8/82/KAngel-pose3.gif/revision/latest/scale-to-width-down/1000?cb=20230913111207" alt="Generation Logo" width="600px" style="margin-bottom:10px;"/>
-            <div style="padding:20px; margin-left:20px;">
+    <body style="background: linear-gradient(#fce9ff, #e9f1ff);">
+        <div align="center" style="margin-top:30px;">
+            <h1 style="text-align:center; color:#000000; font-family:sans-serif;">Mini calculadora!</h1>
+            <img src="https://static.wikia.nocookie.net/needy-streamer-overload/images/8/82/KAngel-pose3.gif/revision/latest/scale-to-width-down/1000?cb=20230913111207" alt="smart/kangel" width="600px" style="margin-bottom:10px;"/>
+            <div style="padding:20px; margin-left:20px; margin-bottom: 15px;">
                 <label>Primer numero: </label>
-                <input type="number" id="num1" style="padding:5px; margin-bottom:10px;"/>
+                <input type="number" id="num1" style="padding: 8px; border-radius: 8px; border: 1px solid #ccc;"/>
 
                 <label>Segundo numero: </label>
-                <input type="number" id="num2" style="padding:5px; margin-bottom:10px;"/>
+                <input type="number" id="num2" style="padding: 8px; border-radius: 8px; border: 1px solid #ccc;"/>
             </div>
             <div>
                 <label>Operacion: </label>
@@ -25,13 +33,30 @@
             </select>
             </div>
             <div>
-                <button onclick="calcular()" style="padding:5px 10px; margin-bottom:10px;">Calcular</button>
+                <button onclick="calcular()" style="
+                padding: 10px 20px;
+                border-radius: 10px;
+                border: none;
+                background: #ffd6f6;
+                cursor: pointer;
+                font-weight: bold;
+                ">Calcular</button>
             </div>
-            <div style="padding:10px 20px;">
+            <div style="
+            margin-top: 15px;
+            padding: 10px;
+            background: #f7f1ff;
+            border-radius: 10px;
+            font-weight: bold;
+            ">
                 <h3>Resultado:</h3>
                 <p id="resultado">—</p>
             </div> 
+            <img src="https://static.wikia.nocookie.net/needy-streamer-overload/images/1/14/%21kangelsuperchat.gif/revision/latest?cb=20230821204719" alt="kangel/bye" width="600px" style="margin-top:10px;" align="center"/>
         </div>
+        <footer>
+            <p>Created by Enrique Berman for Generation</p>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>
